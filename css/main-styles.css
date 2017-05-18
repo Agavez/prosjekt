@@ -1,0 +1,15 @@
+body {
+	background-color: lightgrey;
+}
+
+#mainHeader {
+	background-color: grey;
+	margin: 10px 10px 0px 10px;
+}
+
+#mainHeader h1 {
+	font-size: 4vw;
+	text-align-last: center;
+	color: white;
+}
+
