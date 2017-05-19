@@ -6,12 +6,22 @@ html, body {
 
 #mainHeader {
 	background-color: grey;
-	margin: 10px 10px 0px 10px;
     width: 70%;
     margin-left: 15%;
+    border: 2px solid white;
 }
 
-#mainHeader h1 {
+#mainFooter {
+    background-color: grey;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 25px;
+    border: 2px solid white;
+    bottom: 0;
+    position: fixed;
+}
+
+#mainHeader h1, #mainFooter h2 {
 	font-size: 4vw;
 	text-align-last: center;
 	color: white;
@@ -21,8 +31,19 @@ html, body {
     height: 75%;
     min-height: 75%;
     width: 70%;
-    background-color: lightblue;
     margin-left: 15%;
-    margin-top: 50px;
-    border: 1px solid black;
+    margin-top: 25px;
+    border: 2px solid black;
+    z-index: 0;
+    overflow: hidden;
 }
+
+/*#backscreen {
+    height: 2000px;
+    width: 2000px;
+    background-color: lightgreen;
+    margin-top: -150px;
+    margin-left: -500px;
+    z-index: -1;
+}
+*/
