@@ -1,18 +1,18 @@
 $(function(){
-        
+    /*http://jsfiddle.net/UjztS/*/
     $("#backscreen")
         .css(
             {
-                width: "5000px",
-                height: "2500px",
+                width: "300%",
+                height: "100%",
                 backgroundColor: "green",
                 cursor: "pointer",
-                marginLeft: "-500px",
-                marginTop: "-350px"
+                marginLeft: "-500px"
             }
         )
         .draggable(
             {
+                containment: "parent",
                 start: function(){
                     $(this)
                 },
@@ -24,4 +24,32 @@ $(function(){
                 }
             }
         )
+    
+    $(".images").on(
+        {
+            click: function(){
+                $(this)
+                    .animate(
+                        {
+                            width: "+=100px"
+                        },
+                    200
+                    ) 
+            },
+            mouseenter: function(){
+                $(this)
+                    .effect("pulsate", {times: 5}, 1000)
+            },
+            mouseleave: function(){
+                $(this)
+                    .animate(
+                        {
+                            width: "-=100"
+                        },
+                    200
+                )
+                    .effect("shake", {times: 10}, 100)
+            },
+        }
+    )
 });
