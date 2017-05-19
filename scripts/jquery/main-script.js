@@ -17,12 +17,10 @@ $(function(){
                     $(this)
                 },
                 drag: function(){
-                    $(this)
-                        .css("background-color", "darkgreen")
+                    $(this).css("background-color", "darkgreen")
                 },
                 stop: function(){
-                    $(this)
-                        .css("background-color", "green")
+                    $(this).css("background-color", "green")
                 }
             }
         )
