@@ -3,12 +3,12 @@ $(function(){
     $("#backscreen")
         .css(
             {
-                width: "2000px",
-                height: "1500px",
+                width: "5000px",
+                height: "2500px",
                 backgroundColor: "green",
                 cursor: "pointer",
                 marginLeft: "-500px",
-                marginTop: "-250px"
+                marginTop: "-350px"
             }
         )
         .draggable(
