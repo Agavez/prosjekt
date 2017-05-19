@@ -1,5 +1,8 @@
 $(function(){
-    /*http://jsfiddle.net/UjztS/*/
+    /*
+    http://jsfiddle.net/UjztS/
+    http://stackoverflow.com/questions/14316525/stop-dragging-when-edges-show-with-jquery
+    */
     $("#backscreen")
         .css(
             {
