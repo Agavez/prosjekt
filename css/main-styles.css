@@ -1,5 +1,5 @@
 html, body {
-	background-color: lightgrey;
+	background-color: whitesmoke;
     height: 100%;
     min-height: 100%;
 }
@@ -42,6 +42,12 @@ html, body {
     height: auto;
     width: 10%;
 }
+
+#box1 img{
+    height: 200px;
+    width: 140px;
+}
+
 
 /*#backscreen {
     height: 2000px;
