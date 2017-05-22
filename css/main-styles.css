@@ -26,7 +26,7 @@ html, body {
 	text-align-last: center;
 	color: white;
 }
-
+/*
 #mainContainer {
     height: 75%;
     min-height: 75%;
@@ -37,7 +37,7 @@ html, body {
     z-index: 2;
     overflow: hidden;
 }
-
+*/
 .images {
     height: auto;
     width: 10%;
@@ -48,6 +48,22 @@ html, body {
     width: 140px;
 }
 
+#viewContainer {
+	width: 70%;
+	height: 75%;
+    max-height: 75%;
+	overflow: hidden;
+	border: solid 2px black;
+    margin-left: 15%;
+    margin-top: 25px;
+}
+
+#draggable {
+	width: 3000px;
+	height: 580px; /*Funker ikke helt ennå, skal prøve og gi 100% høyde av parent div */
+    background-color: green;
+    border: 10px solid red;
+}
 
 /*#backscreen {
     height: 2000px;
