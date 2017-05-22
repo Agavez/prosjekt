@@ -31,8 +31,7 @@ $(function(){
 //set up width and height of draggable container according to view container and draggable size
 	var dragContainerWidth = $("#viewContainer").innerWidth() + ($('#draggable').outerWidth() - $("#viewContainer").innerWidth()) * 2;
 	
-	var dragContainerHeight = $("#viewContainer").innerHeight() + 
-	($('#draggable').outerHeight() - $("#viewContainer").innerHeight()) * 2;
+	var dragContainerHeight = $("#viewContainer").innerHeight() + ($('#draggable').outerHeight() - $("#viewContainer").innerHeight()) * 2;
 
 	$("#draggableContainer").css("width",dragContainerWidth);
 	$("#draggableContainer").css("height",dragContainerHeight);
@@ -43,12 +42,30 @@ $(function(){
 	
 	var dragContainerOffsetTop = $("#viewContainer").offset().top + $("#viewContainer").outerHeight()/2 + $("#viewContainer").innerHeight()/2 - $('#draggable').outerHeight();
 
-	$("#draggableContainer").offset({left:dragContainerOffsetLeft,top:dragContainerOffsetTop});
-
-
+	$("#draggableContainer").offset(
+        {
+            left:dragContainerOffsetLeft,
+            top:dragContainerOffsetTop
+        }
+    );
 
 //activate draggable
-	$('#draggable').draggable({containment:"#draggableContainer"});
+	$("#draggable")
+        /*.css(
+            {
+                width: "200%",
+                height: "100",
+                backgroundColor: "green",
+                cursor: "pointer",
+                marginLeft: "-100%",
+                border: "10px solid black"
+            }
+        )*/
+        .draggable(
+            {
+                containment: "#draggableContainer",
+            }
+        )
 	
 	
 	
