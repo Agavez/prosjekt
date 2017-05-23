@@ -43,6 +43,16 @@ html, body {
     width: 10%;
 }
 
+.blue {
+	left: 1900px;
+	top: 450px;
+}
+
+.red {
+	left: 1900px;
+	top: 450px;
+}
+
 #box1 img{
     height: 200px;
     width: 140px;
@@ -60,9 +70,10 @@ html, body {
 
 #draggable {
 	width: 3000px;
-	height: 580px; /*Funker ikke helt ennå, skal prøve og gi 100% høyde av parent div */
+	height: 775px; /*Funker ikke helt ennå, skal prøve og gi 100% høyde av parent div */
     background-color: green;
-    border: 10px solid red;
+	overflow: hidden;
+/*    border: 10px solid red;*/
 }
 
 /*#backscreen {

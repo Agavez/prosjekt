@@ -44,8 +44,8 @@ $(function(){
 
 	$("#draggableContainer").offset(
         {
-            left:dragContainerOffsetLeft,
-            top:dragContainerOffsetTop
+            left: dragContainerOffsetLeft,
+            top: dragContainerOffsetTop
         }
     );
 
@@ -62,23 +62,65 @@ $(function(){
             }
         )*/
         .draggable(
-            {
-                containment: "#draggableContainer",
-            }
-        )
+		{
+			containment: "#draggableContainer"
+		}
+	)
+		.css(
+		{
+			cursor: "pointer"
+		}
+	)
 	
+    $(".images")
+		//.on(
+  //      {
+  //          click: function(){
+  //              $(this)
+  //                  .animate(
+  //                      {
+  //                          width: "+=100px"
+  //                      },
+  //                  200
+  //                  ) 
+  //          },
+  //          mouseenter: function(){
+  //              $(this)
+  //                  .effect("pulsate", {times: 5}, 1000)
+  //          },
+  //          mouseleave: function(){
+  //              $(this)
+  //                  .animate(
+  //                      {
+  //                          width: "-=100"
+  //                      },
+  //                  200
+  //              )
+  //                  .effect("shake", {times: 10}, 100)
+  //          },
+  //      }
+  //  )
+		.draggable(
+		{
+			containment: "parent"
+		}
+	)
+		.css(
+		{
+			cursor: "pointer"
+		}
+	)
 	
-	
-	
-    $(".images").on(
+	$(".blue")
+		.on(
         {
             click: function(){
                 $(this)
                     .animate(
-                        {
-                            width: "+=100px"
-                        },
-                    200
+						{
+							width: "+=100px"
+						},
+                    1000
                     ) 
             },
             mouseenter: function(){
@@ -89,12 +131,43 @@ $(function(){
                 $(this)
                     .animate(
                         {
-                            width: "-=100"
+                            width: "-=100px"
                         },
-                    200
+                    1000
                 )
                     .effect("shake", {times: 10}, 100)
             },
         }
     )
+	
+	$(".red")
+		.on(
+		{
+			click: function(){
+				$(this)
+					.animate(
+						{
+							height: "-=100px",
+							width: "-=100px"
+						},
+					1000
+				)
+			},
+			mouseenter: function(){
+				$(this)
+					.effect("bounce", {times: 2}, 1000)
+			},
+			mouseleave: function(){
+				$(this)
+					.animate(
+					{
+						height: "+=100px",
+						width: "+=100px"
+					},
+					1000
+				)
+			}
+		}
+	)
+
 });
