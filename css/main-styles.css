@@ -45,12 +45,22 @@ html, body {
 
 .blue {
 	left: 1900px;
-	top: 450px;
+	top: 350px;
 }
 
 .red {
 	left: 1900px;
-	top: 450px;
+	top: 350px;
+}
+
+.blueOne {
+    left: 1800px;
+    top: 450px;
+}
+
+.redOne {
+    left: 1800px;
+    top: 450px;
 }
 
 #box1 img{
@@ -71,7 +81,7 @@ html, body {
 #draggable {
 	width: 3000px;
 	height: 775px; /*Funker ikke helt ennå, skal prøve og gi 100% høyde av parent div */
-    background-color: green;
+/*    background-color: green;*/
 	overflow: hidden;
 /*    border: 10px solid red;*/
 }
