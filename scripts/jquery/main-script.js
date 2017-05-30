@@ -29,6 +29,20 @@ $(function(){
             }
         )
 */
+	
+	//var latter = new Audio();
+	//latter.src = "../sounds/barnelatter.mp3";
+	
+	ion.sound({
+		sounds: [
+			{name: "barnelatter"},
+		],
+		
+		path: "../sounds/",
+		preload: true,
+		multiplay: true,
+		volume: 0.9
+	});
     
 //set up width and height of draggable container according to view container and draggable size
 	var dragContainerWidth = $("#viewContainer").innerWidth() + ($('#draggable').outerWidth() - $("#viewContainer").innerWidth()) * 2;
@@ -50,7 +64,7 @@ $(function(){
             top: dragContainerOffsetTop
         }
     );
-
+	
 //activate draggable
 	$("#draggable")
 /*.css(
@@ -126,7 +140,8 @@ $(function(){
 							width: "+=100px"
 						},
                     1000
-                    ) 
+                    )
+				ion.sound.play("barnelatter");
             },
             mouseenter: function(){
                 $(this)
