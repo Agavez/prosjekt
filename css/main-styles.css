@@ -7,21 +7,58 @@ html, body {
 #mainHeader {
 	background-color: grey;
     width: 100%;
+	height: 5%;
+}
+
+#introContainer {
+	width: 50%;
+	height: 50%;
+	max-height: 50%;
+	border: 2px solid black;
+	margin-left: 25%;
+	margin-top: 10%;
+	background: white;
+}
+
+#goToPageBtn {
+	height: 30px;
+}
+
+#viewContainer {
+	width: 100%;
+	height: 95%;
+    max-height: 95%;
+	overflow: hidden;
+}
+
+#draggableContainer {
+	height: 100%;
+	width: 100%;
+}
+
+#draggable {
+	width: 3000px;
+	height: 1100px;
+	overflow: hidden;
 }
 
 #mainFooter {
     background-color: grey;
+	height: 50px;
     width: 100%;
-    margin-top: 25px;
     bottom: 0;
     position: fixed;
 }
 
-#mainHeader h1, #mainFooter h2 {
-	font-size: 4vw;
+#mainHeader h1 {
+	display: inline-block;
+	font-size: 2.5vw;
 	text-align-last: center;
 	color: white;
+	margin-left: 25px;
+	margin-top: 5px;
 }
+
 /*
 #mainContainer {
     height: 75%;
@@ -34,6 +71,7 @@ html, body {
     overflow: hidden;
 }
 */
+
 .images {
     height: auto;
     width: 10%;
@@ -62,21 +100,6 @@ html, body {
 #box1 img{
     height: 200px;
     width: 140px;
-}
-
-#viewContainer {
-	width: 100%;
-	height: 90%;
-    max-height: 90%;
-	overflow: hidden;
-}
-
-#draggable {
-	width: 3000px;
-	height: 775px; /*Funker ikke helt ennå, skal prøve og gi 100% høyde av parent div */
-/*    background-color: green;*/
-	overflow: hidden;
-/*    border: 10px solid red;*/
 }
 
 /*#backscreen {

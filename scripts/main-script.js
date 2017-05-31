@@ -30,9 +30,6 @@ $(function(){
         )
 */
 	
-	//var latter = new Audio();
-	//latter.src = "../sounds/barnelatter.mp3";
-	
 	ion.sound({
 		sounds: [
 			{name: "barnelatter"},
@@ -135,12 +132,6 @@ $(function(){
         {
             click: function(){
                 $(this)
-                    .animate(
-						{
-							width: "+=100px"
-						},
-                    1000
-                    )
 				ion.sound.play("barnelatter");
             },
             mouseenter: function(){
@@ -149,12 +140,6 @@ $(function(){
             },
             mouseleave: function(){
                 $(this)
-                    .animate(
-                        {
-                            width: "-=100px"
-                        },
-                    1000
-                )
                     .effect("shake", {times: 10}, 100)
             },
         }
@@ -165,13 +150,6 @@ $(function(){
 		{
 			click: function(){
 				$(this)
-					.animate(
-						{
-							height: "-=100px",
-							width: "-=100px"
-						},
-					1000
-				)
 			},
 			mouseenter: function(){
 				$(this)
@@ -179,15 +157,42 @@ $(function(){
 			},
 			mouseleave: function(){
 				$(this)
-					.animate(
-					{
-						height: "+=100px",
-						width: "+=100px"
-					},
-					1000
-				)
 			}
 		}
 	)
+	
+	$("#someDialog").dialog(
+		{
+			autoOpen: false,
+			draggable: false,
+			resizable: false,
+			modal: true,
+			show: {
+				effect: "explode",
+				duration: 500
+			},
+			hide: {
+				effect: "explode",
+				duration: 500
+			},
+			buttons: [
+				{
+					text: "Lukk",
+					icons: {
+						secondary: "ui-icon-cancel"
+					},
+					click: function(){
+						$(this).dialog("close");
+					}
+				}
+			]
+		}
+	);
+	
+	$(".container")
+		.button()
+		.on("click", function(){
+			$("someDialog").dialog("open");
+	});
 
 });
