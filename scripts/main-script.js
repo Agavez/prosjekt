@@ -38,7 +38,7 @@ $(function(){
 			{name: "barnelatter"},
 		],
 		
-		path: "../sounds/",
+		path: "../../sounds/",
 		preload: true,
 		multiplay: true,
 		volume: 0.9
@@ -135,16 +135,13 @@ $(function(){
         {
             click: function(){
                 $(this)
-				ion.sound.play("barnelatter");                
-            },
-            dblclick: function(){
-              $(this)
-                .animate(
-                    {
-                        width: "+=100px"
-                    },
-                1000
-                )
+                    .animate(
+						{
+							width: "+=100px"
+						},
+                    1000
+                    )
+				ion.sound.play("barnelatter");
             },
             mouseenter: function(){
                 $(this)
