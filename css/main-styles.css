@@ -79,6 +79,39 @@ html, body {
 /*    border: 10px solid red;*/
 }
 
+.testContainer{
+    background-image: url(../img/canvas.jpeg);
+    background-size: cover;
+    border: 1px solid black;
+    height: 400px;
+    width: 800px;
+    box-shadow: 8px 8px 8px;
+}
+
+.blueBoxes{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blueBoxes img{
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.redBoxes img{
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.redBoxes{
+    margin-left: auto;
+    margin-right: auto;
+}
+/*img {
+    height: 50px !important;
+    width: 50px !important;
+}
+
 /*#backscreen {
     height: 2000px;
     width: 2000px;
