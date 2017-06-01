@@ -161,38 +161,4 @@ $(function(){
 		}
 	)
 	
-	$("#someDialog").dialog(
-		{
-			autoOpen: false,
-			draggable: false,
-			resizable: false,
-			modal: true,
-			show: {
-				effect: "explode",
-				duration: 500
-			},
-			hide: {
-				effect: "explode",
-				duration: 500
-			},
-			buttons: [
-				{
-					text: "Lukk",
-					icons: {
-						secondary: "ui-icon-cancel"
-					},
-					click: function(){
-						$(this).dialog("close");
-					}
-				}
-			]
-		}
-	);
-	
-	$(".container")
-		.button()
-		.on("click", function(){
-			$("someDialog").dialog("open");
-	});
-
 });
