@@ -1,5 +1,5 @@
 html, body {
-	background-color: whitesmoke;
+	background-color: black;
     height: 100%;
     min-height: 100%;
 }
@@ -18,6 +18,16 @@ html, body {
 	margin-left: 25px;
 	margin-top: 5px;
 }*/
+
+#splashContainer {
+    
+}
+
+#splashTxt {
+    color: whitesmoke;
+    text-align: center;
+    vertical-align: middle;
+}
 
 #introContainer {
 	width: 50%;
@@ -38,6 +48,7 @@ html, body {
 	height: 100%;
     max-height: 100%;
 	overflow: hidden;
+    background: whitesmoke;
 }
 
 #draggableContainer {
@@ -104,14 +115,14 @@ html, body {
 
 #viewContainer {
 	width: 100%;
-	height: 90%;
-    max-height: 90%;
+	height: 100%;
+    max-height: 100%;
 	overflow: hidden;
 }
 
 #draggable {
 	width: 3000px;
-	height: 775px; /*Funker ikke helt ennå, skal prøve og gi 100% høyde av parent div */
+	height: 100%; /*Funker ikke helt ennå, skal prøve og gi 100% høyde av parent div */
 /*    background-color: green;*/
 	overflow: hidden;
 /*    border: 10px solid red;*/
