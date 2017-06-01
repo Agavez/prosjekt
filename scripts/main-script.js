@@ -136,7 +136,7 @@ $(function(){
             },
             mouseenter: function(){
                 $(this)
-                    .effect("pulsate", {times: 5}, 1000)
+                    .effect("pulsate", {times: 5}, 7500)
             },
             mouseleave: function(){
                 $(this)
