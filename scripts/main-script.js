@@ -29,12 +29,6 @@ $(function(){
             }
         )
 */
-		
-	var hamburger = document.querySelector(".hamburger");
-	hamburger.addEventListener("click", function() {
-		hamburger.classList.toggle("is-active");
-		$("#dialog").dialog("open");
-	});
 	
 	ion.sound({
 		sounds: [
