@@ -1,4 +1,27 @@
-.figures{
+@keyframes float{
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+.figures {
     width: 5%;
     height: auto;
+	animation: float 3s ease-in-out infinite;
+}
+
+.container{
+    display: grid;
+    grid: repeat(4, 230px) / auto-flow 6.2%;
+    box-sizing: border-box;
+}
+.container img {
+    width: 100%;
+    height: 100%;
 }
