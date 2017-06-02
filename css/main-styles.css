@@ -156,6 +156,10 @@ html, body {
     margin-left: auto;
     margin-right: auto;
 }
+.grid{
+    overflow: scroll;
+}
+
 /*img {
     height: 50px !important;
     width: 50px !important;
