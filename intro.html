@@ -20,14 +20,29 @@
     <div id="mainHeader">
 		<h1>HeaderTest!</h1>
 	</div>
---> 
-	<div id="introContainer">
-		<h2>Trykk på knappen for å gå til neste side</h2>
-		<form action="index.html" method="get">
-			<button id="goToPageBtn">GÅ TIL NESTE SIDE</button>
-		</form>
+-->
+	<div class="wrapper">
+		<div class="content">
+			<video autoplay loop>
+				<source src="video/intro.mp4" type="video/mp4">
+			</video>
+		</div>
+    <div class="splashContainer">
+        <a href="main.html"><h1 id="splashTxt">Enter site.</h1></a>
+    </div>
 	</div>
-		
+	
+	
+<!--
+	<div class="introContainer">
+		<video id="videoContainer" autoplay loop>
+			<source src="video/intro.mp4" type="video/mp4">
+		</video>
+	</div>
+	<div id="videoTxt">
+		<h2>Enter Site</h2>
+	</div>
+-->
 	<!--Scripts-->
 	<script src="scripts/jquery.js"></script>
 	<script src="scripts/jquery-ui.min.js"></script>

@@ -1,134 +1,31 @@
 <!DOCTYPE html>
 <html>
-
+    
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="">
-	<meta name="author" content="">
-	<title>Main</title>
-	
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<meta http-equiv="refresh" content="5;URL='intro.html'">
+    <title>Latter</title>
+    
 	<!--Stylesheets-->
 	<link rel="stylesheet" type="text/css" href="css/meyers-reset.css">
 	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
 	<link rel="stylesheet" type="text/css" href="css/main-styles.css">
-    <link rel="stylesheet" type="text/css" href="css/figures.css">
+    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
 </head>
-
+    
 <body>
 <!--
     <div id="mainHeader">
 		<h1>HeaderTest!</h1>
 	</div>
 -->
-<!--
-    <div id="mainContainer">
-        
-        <div id="backscreen">
-            
-            <img class="images" src="img/dot001.png">
-
-        </div>
-
+    <div class="splashContainer fadeAnimation">
+        <h1 id="splashTxt">Laughter is contagious.</h1>
     </div>
--->
-	<div id="viewContainer">
-		<div id="draggableContainer" style="">
-			<div id="draggable" class="ui-widget-content">
-                <div class="container firstGrid">
-                    <div class="col-lg-12">
-                        <div class="redBoxes">
-                            <img class="figures red" src="img/figures/dot08.png"/>
-                            <img class="figures red" src="img/figures/dot07.png"/>
-                            <img class="figures red" src="img/figures/dot016.png"/>
-                            <img class="figures red" src="img/figures/dot022.png"/>
-                            <img class="figures red" src="img/figures/dot053.png"/>
-                            <img class="figures red" src="img/figures/dot106.png"/>
-                            <img class="figures red" src="img/figures/dot054.png"/>
-                        </div>
-                        <img class="col-lg-1 box1 figures red" src="img/figures/dot02.png">
-                        <img class="col-lg-1 box2 figures green" src="img/figures/dot015.png">
-                        <img class="figures green" src="img/figures/dot015.png">
-                        <img class="figures blue" src="img/figures/dot01.png">
-                        <img class="figures blue" src="img/figures/dot06.png">
-                        <img class="figures red" src="img/figures/dot08.png">
-                        <img class="figures greeen" src="img/figures/dot014.png">
-                        <img class="figures green" src="img/figures/dot011.png">
-                        <img class="figures red" src="img/figures/dot07.png">
-                     </div>
-                    <!-- Break her, 1 rute av 12 (col-lg-12) -->
-                    <img class="figures blue" src="img/figures/dot04.png">
-                    <img class="figures green" src="img/figures/dot010.png">
-                    <img class="figures blue" src="img/figures/dot05.png">
-                    <img class="figures green" src="img/figures/dot012.png">
-                    <img class="figures red" src="img/figures/dot016.png">
-                    <img class="figures redAndBlue" src="img/figures/dot03.png">
-                    <img class="figures blue" src="img/figures/dot017.png">
-                    <img class="figures green" src="img/figures/dot014.png">
-                    <!-- Break her, 2 rute av 12 (col-lg-12) -->
-                    <img class="figures purple" src="img/figures/dot030.png">
-                    <img class="figures green" src="img/figures/dot035.png">
-                    <img class="figures yellow" src="img/figures/dot104.png">
-                    <img class="figures purpleAndYellow" src="img/figures/dot039.png">
-                    <img class="figures purple" src="img/figures/dot027.png">
-                    <img class="figures purple" src="img/figures/dot031.png">
-                    <img class="figures yellow" src="img/figures/dot046.png">
-                    <img class="figures purple" src="img/figures/dot045.png">
-                    <img class="figures purple" src="img/figures/dot028.png">
-                    
-                    <img class="figures red" src="img/figures/dot022.png">
-                    <img class="figures yellow" src="img/figures/dot040.png">
-                    <img class="figures purple" src="img/figures/dot047.png">
-                    <img class="figures redAndYellow" src="img/figures/dot018.png">
-                    <img class="figures yellow" src="img/figures/dot020.png">
-                    <img class="figures purpleAndYellow" src="img/figures/dot042.png">
-                    <img class="figures red" src="img/figures/dot053.png">
-                    <img class="figures purple" src="img/figures/dot050.png">
-                    <!-- Break her, 4 rute av 12 (col-lg-12) -->
-                    
-                    <img class="figures blue" src="img/figures/dot057.png">
-                    <img class="figures red" src="img/figures/dot106.png">
-                    <img class="figures blue" src="img/figures/dot021.png">
-                    <img class="figures green" src="img/figures/dot036.png">
-                    <img class="figures brown" src="img/figures/dot019.png">
-                    <img class="figures blue" src="img/figures/dot024.png">
-                    <img class="figures green" src="img/figures/dot038.png">
-                    <img class="figures red" src="img/figures/dot054.png">
-                    <img class="figures green" src="img/figures/dot102.png">
-                    <!-- Break her, 5 rute av 12 (col-lg-12) -->
-                    <img class="figures purple" src="img/figures/dot025.png">
-                </div>
-			</div>
-		</div>
-	</div>
-	<!--
-    <div id="mainFooter">
-        <h2>FooterTest!</h2>
-    </div>
--->
-	
-	<!--Scripts-->
-	<script src="scripts/jquery.js"></script>
-	<script src="scripts/jquery-ui.min.js"></script>
-	<script src="scripts/ion.sound.min.js"></script>
-	<script src="scripts/main-script.js"></script>
-	
-<!--
-    <script>
-            
-        $(".blueBoxes").click(function(){
-            $("#box1").animate({
-                width: "100px",
-                marginLeft: "0.6in",
-                fontSize: "3em",
-                borderWidth: "10px"
-            }, 1500)
-        });
-        
-    </script>
--->
-
+    <!-- ADD FADEIN + FADEUT-->
 </body>
-
 </html>
