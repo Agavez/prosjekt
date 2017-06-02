@@ -20,13 +20,19 @@ html, body {
 }*/
 
 #splashContainer {
-    
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #splashTxt {
     color: whitesmoke;
-    text-align: center;
-    vertical-align: middle;
+    margin: 0;
+    font-family: 'Karla', sans-serif;
+    font-size: 1.5vw;
 }
 
 #introContainer {
@@ -123,9 +129,7 @@ html, body {
 #draggable {
 	width: 3000px;
 	height: 100%; /*Funker ikke helt ennå, skal prøve og gi 100% høyde av parent div */
-/*    background-color: green;*/
 	overflow: hidden;
-/*    border: 10px solid red;*/
 }
 
 .testContainer{
