@@ -4,6 +4,13 @@ html, body {
     min-height: 100%;
 }
 
+iframe {
+	height: 0px;
+	width: 0px;
+	border: 0px;
+	border: none;
+}
+
 /*#mainHeader {
 	background-color: grey;
     width: 100%;
@@ -142,12 +149,25 @@ video {
 }
 */
 
+#hamburgerContainer {
+	height: 5%;
+	width: auto;
+	z-index: 10;
+	background: whitesmoke;
+}
+
+.hamburger {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
 #viewContainer {
 	width: 100%;
-	height: 100%;
-    max-height: 100%;
+	height: 95%;
+    max-height: 95%;
 	overflow: hidden;
-    background: whitesmoke;
+	background: whitesmoke;
 }
 
 #draggableContainer {
@@ -158,7 +178,9 @@ video {
 #draggable {
 	width: 3000px;
 	height: 100%;
+	margin-top: -5%;
 	overflow: hidden;
+	background: whitesmoke;
 }
 
 /*
@@ -214,6 +236,7 @@ video {
     width: 140px;
 }
 
+/*
 #viewContainer {
 	width: 100%;
 	height: 100%;
@@ -223,9 +246,10 @@ video {
 
 #draggable {
 	width: 3000px;
-	height: 100%; /*Funker ikke helt ennå, skal prøve og gi 100% høyde av parent div */
+	height: 100%; Funker ikke helt ennå, skal prøve og gi 100% høyde av parent div 
 	overflow: hidden;
 }
+*/
 
 .testContainer{
     background-image: url(../img/canvas.jpeg);

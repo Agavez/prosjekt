@@ -30,6 +30,11 @@ $(function(){
         )
 */
 	
+	var hamburger = document.querySelector(".hamburger");
+	hamburger.addEventListener("click", function() {
+		hamburger.classList.toggle("is-active");
+	});
+	
 	ion.sound({
 		sounds: [
 			{name: "barnelatter"},
@@ -77,6 +82,7 @@ $(function(){
 */
         .draggable(
 		{
+			axis: "x",
 			containment: "#draggableContainer"
 		}
 	)
