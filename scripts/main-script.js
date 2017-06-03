@@ -34,8 +34,9 @@ $(function(){
 	
 	var $hamburger = $(".hamburger");
 	$hamburger.on("click", function(){
-		$("#viewContainer, #omTxt").toggle();
+		$("#viewContainer, #omTxt").toggle()
 		$hamburger.toggleClass("is-active");
+		
 	});
 	
 	ion.sound({
