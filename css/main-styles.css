@@ -298,6 +298,10 @@ p {
 	line-height: 150%;
 }
 
+.hamburger {
+	padding: 10px 10px;
+}
+
 /*img {
     height: 50px !important;
     width: 50px !important;

@@ -41,12 +41,13 @@ $(function(){
 	
 	ion.sound({
 		sounds: [
-			{name: "barnelatter"},
+			{
+				name: "barnelatter"
+			},
 		],
 		
-		path: "../../sounds/",
+		path: "sounds/",
 		preload: true,
-		multiplay: true,
 		volume: 0.9
 	});
     
@@ -146,11 +147,11 @@ $(function(){
             },
             mouseenter: function(){
                 $(this)
-                    .effect("pulsate", {times: 5}, 7500)
+                    .effect("pulsate", {times: 1}, 1000)
             },
             mouseleave: function(){
                 $(this)
-                    .effect("shake", {times: 10}, 100)
+                    .effect("shake", {times: 1}, 1000)
             },
         }
     )
@@ -163,7 +164,7 @@ $(function(){
 			},
 			mouseenter: function(){
 				$(this)
-					.effect("bounce", {times: 2}, 1000)
+					.effect("bounce", {times: 1}, 1000)
 			},
 			mouseleave: function(){
 				$(this)
