@@ -87,7 +87,7 @@ $(function(){
 		}
 	)
 	
-    $(".images")
+    $(".drag")
 /*
 		.on(
         {
