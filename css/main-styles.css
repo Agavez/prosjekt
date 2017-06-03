@@ -176,7 +176,7 @@ video {
 }
 
 #draggable {
-	width: 3000px;
+	width: 7000px;
 	height: 100%;
 	margin-top: -5%;
 	overflow: hidden;
@@ -286,11 +286,16 @@ video {
 #omTxt {
 	color: whitesmoke;
     font-family: 'Karla', sans-serif;
-    font-size: 1.5vw;
-	width: 35%;
-	margin-left: 10%;
+    font-size: 1vw;
+	width: 22.5%;
+	margin-left: 25%;
 	margin-top: 10%;
-/*	margin-bottom: -10%;*/
+}
+
+p {
+	display: block;
+	margin: 5px;
+	line-height: 150%;
 }
 
 /*img {
