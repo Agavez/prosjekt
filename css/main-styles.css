@@ -102,10 +102,10 @@ a {
 }
 
 .fadeAnimation {
-   	-webkit-animation: fadeAnimation 5s;
-   	-moz-animation: fadeAnimation 5s;
-   	-o-animation: fadeAnimation 5s;
-    animation: fadeAnimation 5s;
+   	-webkit-animation: fadeAnimation 5.2s;
+   	-moz-animation: fadeAnimation 5.2s;
+   	-o-animation: fadeAnimation 5.2s;
+    animation: fadeAnimation 5.2s;
 	-webkit-animation-timing-function: linear;
 	-moz-animation-timing-function: linear;
 	-o-animation-timing-function: linear;
@@ -281,6 +281,16 @@ video {
 }
 .grid{
     overflow: scroll;
+}
+
+#omTxt {
+	color: whitesmoke;
+    font-family: 'Karla', sans-serif;
+    font-size: 1.5vw;
+	width: 35%;
+	margin-left: 10%;
+	margin-top: 10%;
+/*	margin-bottom: -10%;*/
 }
 
 /*img {
