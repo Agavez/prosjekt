@@ -251,18 +251,4 @@ $(function () {
             audio.play();
         }
     })
-    $("redAndYellow").on({
-        mouseenter: function () {
-            $(this).not(".getting-bigger").addClass("getting-bigger").animate({
-                width: "+=100px";
-            }, 1000);
-        }
-        , mouseleave: function () {
-            $(this).not(".getting-smaller").addClass("getting-smaller").animate({
-                width: "-=100px";
-            }, 1000, function () {
-                $(this).removeClass("getting-bigger getting-smaller");
-            })
-        }
-    })
 });
