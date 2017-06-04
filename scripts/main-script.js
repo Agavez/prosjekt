@@ -85,7 +85,7 @@ $(function () {
 					},
 					500,
 					function(){
-						$(this).removeClass("getting-bigger getting-smaller")
+						$(this).removeClass("getting-bigger getting-smaller");
 					}
 				)
 			}
