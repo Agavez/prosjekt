@@ -96,12 +96,12 @@
     -webkit-animation-iteration-count: infinite;
 }
 
-.container{
+.figureContainer{
     display: grid;
-    grid: repeat(4, 230px) / auto-flow 6.2%;
+    grid: repeat(4, 220px) / auto-flow 6.2%;
     box-sizing: border-box;
 }
-.container img {
+.figureContainer img {
     width: 75%;
     height: auto;
 }
