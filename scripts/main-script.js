@@ -60,6 +60,18 @@ $(function () {
 				$(this)
 				var audio = new Audio("../prosjekt/sounds/seblatter.ogg");
 				audio.play();
+			},
+			mouseenter: function(){
+				$(this)
+					.effect("pulsate", {times: 5}, 5000)
+			},
+			mousedown: function(){
+				$(this)
+					.stop(true, true).effect("pulsate", {times: 1}, 0)
+			},
+			mouseleave: function(){
+				$(this)
+					.stop(true, true).effect("pulsate", {times: 1}, 0)
 			}
 		}
 	)
@@ -71,6 +83,22 @@ $(function () {
 				$(this)
 				var audio = new Audio("../prosjekt/sounds/marlenelatter.ogg");
 				audio.play();
+			},
+			mouseenter: function(){
+				$(this)
+					.animate(
+					{
+						width: "+=100px",
+						height: "+=100px"
+					},
+					1000
+				)
+			},
+			mousedown: function(){
+				
+			},
+			mouseleave: function(){
+				
 			}
 		}
 	)
@@ -82,6 +110,15 @@ $(function () {
 				$(this)
 				var audio = new Audio("../prosjekt/sounds/saralatter.ogg");
 				audio.play();
+			},
+			mouseenter: function(){
+				
+			},
+			mousedown: function(){
+				
+			},
+			mouseleave: function(){
+				
 			}
 		}
 	)
@@ -93,6 +130,15 @@ $(function () {
 				$(this)
 				var audio = new Audio("../prosjekt/sounds/annalatter.ogg");
 				audio.play();
+			},
+			mouseenter: function(){
+				
+			},
+			mousedown: function(){
+				
+			},
+			mouseleave: function(){
+				
 			}
 		}
 	)
@@ -104,6 +150,15 @@ $(function () {
 				$(this)
 				var audio = new Audio("../prosjekt/sounds/mikelatter.ogg");
 				audio.play();
+			},
+			mouseenter: function(){
+				
+			},
+			mousedown: function(){
+				
+			},
+			mouseleave: function(){
+				
 			}
 		}
 	)
@@ -115,7 +170,16 @@ $(function () {
 				$(this)
 				var audio = new Audio("../prosjekt/sounds/latter.ogg");
 				audio.play();
-			}
+			},
+			mouseenter: function(){
+				
+			},
+			mousedown: function(){
+				
+			},
+			mouseleave: function(){
+				
+			}			
 		}
 	)
 	
@@ -126,6 +190,15 @@ $(function () {
 				$(this)
 				var audio = new Audio("../prosjekt/sounds/barnelatter.ogg");
 				audio.play();
+			},
+			mouseenter: function(){
+				
+			},
+			mousedown: function(){
+				
+			},
+			mouseleave: function(){
+				
 			}
 		}
 	)
@@ -137,6 +210,15 @@ $(function () {
 				$(this)
 				var audio = new Audio("../prosjekt/sounds/barnelatter2.ogg");
 				audio.play();
+			},
+			mouseenter: function(){
+				
+			},
+			mousedown: function(){
+				
+			},
+			mouseleave: function(){
+				
 			}
 		}
 	)
@@ -148,6 +230,15 @@ $(function () {
 				$(this)
 				var audio = new Audio("../prosjekt/sounds/barnelatter3.ogg");
 				audio.play();
+			},
+			mouseenter: function(){
+				
+			},
+			mousedown: function(){
+				
+			},
+			mouseleave: function(){
+				
 			}
 		}
 	)
