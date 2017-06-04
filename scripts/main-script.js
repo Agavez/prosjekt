@@ -30,6 +30,11 @@ $(function(){
         )
 */
 	
+	document.body.className += " fade-out";
+	$(function() {
+		$("body").removeClass("fade-out");
+	});
+	
 	$("#omTxt").hide();
 	$("#hamburgerContainerTwo").hide();
 	
