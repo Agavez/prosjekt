@@ -1,82 +1,99 @@
 @keyframes float {
 	0% {
 		transform: translatey(0px);
+		-webkit-transform: translatey(0px);
 	}
 	50% {
 		transform: translatey(-20px);
+		-webkit-transform: translatey(-20px);
 	}
 	100% {
 		transform: translatey(0px);
+		-webkit-transform: translatey(0px);
 	}
 }
 
 @keyframes floating {
     0% {
         transform: translateX(0%);  
+        -webkit-transform: translateX(0%);  
     }
     20% {
         transform: translateX(60%);  
+        -webkit-transform: translateX(60%);  
     }
   	80% {
 		transform:translateX(20%);
+		-webkit-transform:translateX(20%);
     }
     100% {
         transform: translateX(0%);
+        -webkit-transform: translateX(0%);
     }           
 }
 
 @-webkit-keyframes floating {
     0% {
         transform: translateX(0%);  
+        -webkit-transform: translateX(0%);  
     }
     50% { 
         transform: translateX(100%);  
+        -webkit-transform: translateX(100%);  
     }
   	80% {
       	transform: translateX(150%);  
+      	-webkit-transform: translateX(150%);  
     }
     100% {
         transform: translateX(0%);
+        -webkit-transform: translateX(0%);
     }           
 }
 
 @keyframes floating4 {
     0% {
         transform: translateX(0%);  
+        -webkit-transform: translateX(0%);  
     }
     50% {
 		transform:translateX(75%);
+		-webkit-transform:translateX(75%);
     }
     100% {
         transform: translateX(0%);
+        -webkit-transform: translateX(0%);
     }           
 }
 
 @-webkit-keyframes floating4 {
     0% {
         transform: translateX(0%);  
+        -webkit-transform: translateX(0%);  
     }
     50% { 
         transform: translateX(50%);  
+        -webkit-transform: translateX(50%);  
     }
     100% {
         transform: translateX(0%);
+        -webkit-transform: translateX(0%);
     }           
 }
 
 .figures {
-    width: 7%;
+    width: 5%;
     height: auto;
 }
 
 .figures1 {
-    width: 4%;
+    width: 2%;
     height: auto;
 	animation: float 3s ease-in-out infinite;
 }
 
 .figures2 {
-    width: 5%;
+    width: 3%;
     height: auto;
     animation-name: floating;
     -webkit-animation-name: floating;
@@ -87,7 +104,7 @@
 }
 
 .figures3 {
-    width: 6%;
+    width: 4%;
     height: auto;
     animation-name: floating;
     -webkit-animation-name: floating;
@@ -104,6 +121,6 @@
 }
 
 .figureContainer img {
-    width: 75%;
+    width: 70%;
     height: auto;
 }
