@@ -1,22 +1,21 @@
 $(function () {
 
+	//hide for objekter som skal vises senere
     $("#omTxt").hide();
     $("#hamburgerContainerTwo").hide();
 	
+	//hamburgermenyen
     var $hamburger = $(".hamburger");
     $hamburger.on("click", function () {
         $("#viewContainer, #omTxt").toggle()
         $hamburger.toggleClass("is-active");
     });
 	
-	
-    //set up width and height of draggable container according to view container and draggable size
+	//draggable vinduer
     var dragContainerWidth = $("#viewContainer").innerWidth() + ($('#draggable').outerWidth() - $("#viewContainer").innerWidth()) * 2;
     var dragContainerHeight = $("#viewContainer").innerHeight() + ($('#draggable').outerHeight() - $("#viewContainer").innerHeight()) * 2;
     $("#draggableContainer").css("width", dragContainerWidth);
     $("#draggableContainer").css("height", dragContainerHeight);
-	
-    //set up position of draggable container according to view container and draggable size
     var dragContainerOffsetLeft = $("#viewContainer").offset().left + $("#viewContainer").outerWidth() / 2 + $("#viewContainer").innerWidth() / 2 - $('#draggable').outerWidth();
     var dragContainerOffsetTop = $("#viewContainer").offset().top + $("#viewContainer").outerHeight() / 2 + $("#viewContainer").innerHeight() / 2 - $('#draggable').outerHeight();
     $("#draggableContainer")
@@ -25,7 +24,7 @@ $(function () {
 			top: dragContainerOffsetTop
     });
 	
-	//activate draggable
+	//aktiverer draggable for bakgrunnen
 	$("#draggable")
 		.draggable(
 		{
@@ -39,20 +38,16 @@ $(function () {
 		}
 	)
 	
+	//aktiverer draggable for figurene
 	$(".drag")
-		.draggable(
-		//{
-		//	containment: ".figureContainer"
-		//}
-	)
+		.draggable()
 		.css(
 		{
 			cursor: "pointer"
 		}
 	)
 	
-	//colors
-	
+	//alle figurene er koblet opp mot fargen de er, så alle røde har lik animasjon osv
 	$(".blue")
 		.on(
 		{
@@ -63,30 +58,25 @@ $(function () {
 			},
 			mouseenter: function(){
 				$(this)
-					.not(".getting-bigger")
-					.addClass("getting-bigger")
 					.animate(
-						{
-							width: "+=50%"
-						},
-						500
+					{
+						width: "+=20%",
+						height: "auto"
+					},
+					500
 				)
 			},
 			mousedown: function(){
-				$(this)
+				
 			},
 			mouseleave: function(){
 				$(this)
-					.not(".getting-smaller")
-					.addClass("getting-smaller")
 					.animate(
 					{
-						width: "-=50%"
+						width: "-=20%",
+						height: "auto"
 					},
-					500,
-					function(){
-						$(this).removeClass("getting-bigger getting-smaller");
-					}
+					500
 				)
 			}
 		}
