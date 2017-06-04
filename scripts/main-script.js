@@ -1,17 +1,21 @@
 $(function () {
+<<<<<<< HEAD
 
 	//hide for objekter som skal vises senere
+	
     $("#omTxt").hide();
     $("#hamburgerContainerTwo").hide();
 	
 	//hamburgermenyen
+	
     var $hamburger = $(".hamburger");
     $hamburger.on("click", function () {
         $("#viewContainer, #omTxt").toggle()
         $hamburger.toggleClass("is-active");
     });
 	
-	//draggable vinduer
+	//draggable bakgrunns vinduer
+	
     var dragContainerWidth = $("#viewContainer").innerWidth() + ($('#draggable').outerWidth() - $("#viewContainer").innerWidth()) * 2;
     var dragContainerHeight = $("#viewContainer").innerHeight() + ($('#draggable').outerHeight() - $("#viewContainer").innerHeight()) * 2;
     $("#draggableContainer").css("width", dragContainerWidth);
@@ -20,11 +24,12 @@ $(function () {
     var dragContainerOffsetTop = $("#viewContainer").offset().top + $("#viewContainer").outerHeight() / 2 + $("#viewContainer").innerHeight() / 2 - $('#draggable').outerHeight();
     $("#draggableContainer")
 		.offset({
-        	left: dragContainerOffsetLeft,
+			left: dragContainerOffsetLeft,
 			top: dragContainerOffsetTop
     });
 	
 	//aktiverer draggable for bakgrunnen
+	
 	$("#draggable")
 		.draggable(
 		{
@@ -39,6 +44,7 @@ $(function () {
 	)
 	
 	//aktiverer draggable for figurene
+	
 	$(".drag")
 		.draggable()
 		.css(
@@ -48,6 +54,7 @@ $(function () {
 	)
 	
 	//alle figurene er koblet opp mot fargen de er, så alle røde har lik animasjon osv
+	
 	$(".blue")
 		.on(
 		{
@@ -350,5 +357,5 @@ $(function () {
 			}
 		}
 	)
-
+	
 });
