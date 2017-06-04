@@ -102,10 +102,10 @@ a {
 }
 
 .fadeAnimation {
-   	-webkit-animation: fadeAnimation 5.2s;
-   	-moz-animation: fadeAnimation 5.2s;
-   	-o-animation: fadeAnimation 5.2s;
-    animation: fadeAnimation 5.2s;
+   	-webkit-animation: fadeAnimation 7.2s;
+   	-moz-animation: fadeAnimation 7.2s;
+   	-o-animation: fadeAnimation 7.2s;
+    animation: fadeAnimation 7.2s;
 	-webkit-animation-timing-function: linear;
 	-moz-animation-timing-function: linear;
 	-o-animation-timing-function: linear;
@@ -154,6 +154,13 @@ video {
 	width: auto;
 	z-index: 10;
 	background: whitesmoke;
+}
+
+#hamburgerContainerTwo {
+	height: 5%;
+	width: auto;
+	z-index: 10;
+	background: black;
 }
 
 .hamburger {

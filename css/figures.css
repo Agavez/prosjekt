@@ -101,6 +101,7 @@
     grid: repeat(4, 230px) / auto-flow 6.2%;
     box-sizing: border-box;
 }
+
 .container img {
     width: 75%;
     height: auto;

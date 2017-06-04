@@ -31,25 +31,15 @@ $(function(){
 */
 	
 	$("#omTxt").hide();
+	$("#hamburgerContainerTwo").hide();
 	
 	var $hamburger = $(".hamburger");
 	$hamburger.on("click", function(){
 		$("#viewContainer, #omTxt").toggle()
+		//$("#hamburgerContainer, #hamburgerContainerTwo").toggle();
 		$hamburger.toggleClass("is-active");
-		
 	});
 	
-	ion.sound({
-		sounds: [
-			{
-				name: "barnelatter"
-			},
-		],
-		
-		path: "sounds/",
-		preload: true,
-		volume: 0.9
-	});
     
 //set up width and height of draggable container according to view container and draggable size
 	var dragContainerWidth = $("#viewContainer").innerWidth() + ($('#draggable').outerWidth() - $("#viewContainer").innerWidth()) * 2;
@@ -129,7 +119,7 @@ $(function(){
 */
 		.draggable(
 		{
-			containment: "parent"
+			//containment: "#container"
 		}
 	)
 		.css(
@@ -142,16 +132,15 @@ $(function(){
 		.on(
         {
             click: function(){
-                $(this)
-				ion.sound.play("barnelatter");
+				$(this)
+				var audio = new Audio("../prosjekt/sounds/seblatter.ogg");
+				audio.play();
             },
             mouseenter: function(){
                 $(this)
-                    .effect("pulsate", {times: 1}, 1000)
             },
             mouseleave: function(){
                 $(this)
-                    .effect("shake", {times: 1}, 1000)
             },
         }
     )
@@ -161,15 +150,93 @@ $(function(){
 		{
 			click: function(){
 				$(this)
+				var audio = new Audio("../prosjekt/sounds/annalatter.ogg");
+				audio.play();
 			},
 			mouseenter: function(){
 				$(this)
-					.effect("bounce", {times: 1}, 1000)
 			},
 			mouseleave: function(){
 				$(this)
 			}
 		}
 	)
+	
+	$(".green")
+		.on(
+		{
+			click: function(){
+				$(this)
+				var audio = new Audio("../prosjekt/sounds/barnelatter3.ogg");
+				audio.play();
+			}
+		}
+	)
+	
+	$(".yellow")
+		.on(
+		{
+			click: function(){
+				$(this)
+				var audio = new Audio("../prosjekt/sounds/latter.ogg");
+				audio.play();
+			}
+		}
+	)
+	
+	$(".purple")
+		.on(
+		{
+			click: function(){
+				$(this)
+				var audio = new Audio("../prosjekt/sounds/marlenelatter.ogg");
+				audio.play();
+			}
+		}
+	)
+	
+	$(".brown")
+		.on(
+		{
+			click: function(){
+				$(this)
+				var audio = new Audio("../prosjekt/sounds/mikelatter.ogg");
+				audio.play();
+			}
+		}
+	)
+	
+	$(".redAndYellow")
+		.on(
+		{
+			click: function(){
+				$(this)
+				var audio = new Audio("../prosjekt/sounds/saralatter.ogg");
+				audio.play();
+			}
+		}
+	)
+	
+	$(".purpleAndYellow")
+		.on(
+		{
+			click: function(){
+				$(this)
+				var audio = new Audio("../prosjekt/sounds/barnelatter.ogg");
+				audio.play();
+			}
+		}
+	)
+
+	$(".redAndBlue")
+		.on(
+		{
+			click: function(){
+				$(this)
+				var audio = new Audio("../prosjekt/sounds/barnelatter2.ogg");
+				audio.play();
+			}
+		}
+	)	
 	
 });
