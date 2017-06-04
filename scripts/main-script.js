@@ -1,22 +1,22 @@
 $(function () {
 
-	//hide for objekter som skal vises senere
     $("#omTxt").hide();
     $("#hamburgerContainerTwo").hide();
 	
-	
-	//hamburgermenyen
     var $hamburger = $(".hamburger");
     $hamburger.on("click", function () {
         $("#viewContainer, #omTxt").toggle()
         $hamburger.toggleClass("is-active");
     });
 	
-	//draggable vinduer
+	
+    //set up width and height of draggable container according to view container and draggable size
     var dragContainerWidth = $("#viewContainer").innerWidth() + ($('#draggable').outerWidth() - $("#viewContainer").innerWidth()) * 2;
     var dragContainerHeight = $("#viewContainer").innerHeight() + ($('#draggable').outerHeight() - $("#viewContainer").innerHeight()) * 2;
     $("#draggableContainer").css("width", dragContainerWidth);
     $("#draggableContainer").css("height", dragContainerHeight);
+	
+    //set up position of draggable container according to view container and draggable size
     var dragContainerOffsetLeft = $("#viewContainer").offset().left + $("#viewContainer").outerWidth() / 2 + $("#viewContainer").innerWidth() / 2 - $('#draggable').outerWidth();
     var dragContainerOffsetTop = $("#viewContainer").offset().top + $("#viewContainer").outerHeight() / 2 + $("#viewContainer").innerHeight() / 2 - $('#draggable').outerHeight();
     $("#draggableContainer")
@@ -25,7 +25,7 @@ $(function () {
 			top: dragContainerOffsetTop
     });
 	
-	//aktiver draggable for bakgrunnen
+	//activate draggable
 	$("#draggable")
 		.draggable(
 		{
@@ -39,16 +39,20 @@ $(function () {
 		}
 	)
 	
-	//aktiver draggable for figurene
 	$(".drag")
-		.draggable()
+		.draggable(
+		//{
+		//	containment: ".figureContainer"
+		//}
+	)
 		.css(
 		{
 			cursor: "pointer"
 		}
 	)
 	
-	//alle figurene er koblet opp mot fargen de er, så alle røde har lik animasjon osv
+	//colors
+	
 	$(".blue")
 		.on(
 		{
@@ -309,7 +313,7 @@ $(function () {
 					500
 				)
 			},
-			mousedown: function(){
+			mousedown: function () {
 				
 			},
 			mouseleave: function(){
@@ -342,8 +346,6 @@ $(function () {
 					},
 					500
 				)
-			},
-			mousedown: function(){
 				
 			},
 			mouseleave: function(){
