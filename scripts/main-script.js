@@ -1,5 +1,4 @@
-$(function () {
-<<<<<<< HEAD
+$(function(){
 
 	//hide for objekter som skal vises senere
 	
@@ -9,7 +8,7 @@ $(function () {
 	//hamburgermenyen
 	
     var $hamburger = $(".hamburger");
-    $hamburger.on("click", function () {
+    $hamburger.on("click", function() {
         $("#viewContainer, #omTxt").toggle()
         $hamburger.toggleClass("is-active");
     });
@@ -73,9 +72,6 @@ $(function () {
 					500
 				)
 			},
-			mousedown: function(){
-				
-			},
 			mouseleave: function(){
 				$(this)
 					.animate(
@@ -94,8 +90,8 @@ $(function () {
 		{
 			click: function(){
 				$(this)
-					var audio = new Audio("../prosjekt/sounds/marlenelatter.ogg");
-					audio.play();
+				var audio = new Audio("../prosjekt/sounds/marlenelatter.ogg");
+				audio.play();
 			},
 			mouseenter: function(){
 				$(this)
@@ -106,9 +102,6 @@ $(function () {
 					},
 					500
 				)
-			},
-			mousedown: function(){
-				
 			},
 			mouseleave: function(){
 				$(this)
@@ -141,9 +134,6 @@ $(function () {
 					500
 				)
 			},
-			mousedown: function(){
-				
-			},
 			mouseleave: function(){
 				$(this)
 					.animate(
@@ -173,9 +163,6 @@ $(function () {
 					},
 					500
 				)
-			},
-			mousedown: function(){
-				
 			},
 			mouseleave: function(){
 				$(this)
@@ -208,9 +195,6 @@ $(function () {
 					500
 				)
 			},
-			mousedown: function(){
-				
-			},
 			mouseleave: function(){
 				$(this)
 					.animate(
@@ -241,9 +225,6 @@ $(function () {
 					},
 					500
 				)
-			},
-			mousedown: function(){
-				
 			},
 			mouseleave: function(){
 				$(this)
@@ -276,9 +257,6 @@ $(function () {
 					500
 				)
 			},
-			mousedown: function(){
-				
-			},
 			mouseleave: function(){
 				$(this)
 					.animate(
@@ -310,9 +288,6 @@ $(function () {
 					500
 				)
 			},
-			mousedown: function () {
-				
-			},
 			mouseleave: function(){
 				$(this)
 					.animate(
@@ -343,7 +318,6 @@ $(function () {
 					},
 					500
 				)
-				
 			},
 			mouseleave: function(){
 				$(this)
