@@ -45,7 +45,7 @@
         transform: translateX(0%);  
     }
     50% {
-    		transform:translateX(100%)
+    		transform:translateX(75%)
     }
     100% {
         transform: translateX(0%);
@@ -62,6 +62,11 @@
     100% {
         -webkit-transform: translateX(0%);
     }           
+}
+
+.figures {
+    width: 8%;
+    height: auto;
 }
 
 .figures1 {
@@ -97,12 +102,12 @@
 }
 
 .figureContainer{
-    display: grid;
-    grid: repeat(4, 220px) / auto-flow 6.2%;
-    box-sizing: border-box;
+    display: grid !important;
+    grid: repeat(4, 220px) / auto-flow 6.2% !important;
+    box-sizing: border-box !important;
 }
 
 .figureContainer img {
-    width: 75%;
-    height: auto;
+    width: 75% !important;
+    height: auto !important;
 }
