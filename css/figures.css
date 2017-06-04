@@ -89,7 +89,7 @@
 .figures1 {
     width: 2%;
     height: auto;
-	animation: float 3s ease-in-out infinite;
+	animation: float 2s ease-in-out infinite;
 }
 
 .figures2 {
@@ -97,8 +97,8 @@
     height: auto;
     animation-name: floating;
     -webkit-animation-name: floating;
-    animation-duration: 10s;   
-    -webkit-animation-duration: 10s;
+    animation-duration: 5s;   
+    -webkit-animation-duration: 5s;
     animation-iteration-count: infinite;
     -webkit-animation-iteration-count: infinite;
 }
@@ -108,8 +108,8 @@
     height: auto;
     animation-name: floating;
     -webkit-animation-name: floating;
-    animation-duration: 25s;   
-    -webkit-animation-duration: 25s;
+    animation-duration: 7.5s;   
+    -webkit-animation-duration: 7.5s;
     animation-iteration-count: infinite;
     -webkit-animation-iteration-count: infinite;
 }
