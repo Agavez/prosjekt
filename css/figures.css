@@ -108,6 +108,6 @@
 }
 
 .figureContainer img {
-    width: 75% !important;
-    height: auto !important;
+    width: 75%;
+    height: auto;
 }

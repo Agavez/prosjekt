@@ -63,15 +63,31 @@ $(function () {
 			},
 			mouseenter: function(){
 				$(this)
-					.effect("pulsate", {times: 5}, 5000)
+					.not(".getting-bigger")
+					.addClass("getting-bigger")
+					.animate(
+						{
+							width: "+=50%"
+						},
+						500
+				)
 			},
 			mousedown: function(){
 				$(this)
-					.stop(true, true).effect("pulsate", {times: 1}, 0)
 			},
 			mouseleave: function(){
 				$(this)
-					.stop(true, true).effect("pulsate", {times: 1}, 0)
+					.not(".getting-smaller")
+					.addClass("getting-smaller")
+					.animate(
+					{
+						width: "-=50%"
+					},
+					500,
+					function(){
+						$(this).removeClass("getting-bigger getting-smaller")
+					}
+				)
 			}
 		}
 	)
@@ -81,24 +97,31 @@ $(function () {
 		{
 			click: function(){
 				$(this)
-				var audio = new Audio("../prosjekt/sounds/marlenelatter.ogg");
-				audio.play();
+					var audio = new Audio("../prosjekt/sounds/marlenelatter.ogg");
+					audio.play();
 			},
 			mouseenter: function(){
 				$(this)
 					.animate(
 					{
-						width: "+=100px",
-						height: "+=100px"
+						width: "+=20%",
+						height: "auto"
 					},
-					1000
+					500
 				)
 			},
 			mousedown: function(){
 				
 			},
 			mouseleave: function(){
-				
+				$(this)
+					.animate(
+					{
+						width: "-=20%",
+						height: "auto"
+					},
+					500
+				)
 			}
 		}
 	)
@@ -112,17 +135,30 @@ $(function () {
 				audio.play();
 			},
 			mouseenter: function(){
-				
+				$(this)
+					.animate(
+					{
+						width: "+=20%",
+						height: "auto"
+					},
+					500
+				)
 			},
 			mousedown: function(){
 				
 			},
 			mouseleave: function(){
-				
+				$(this)
+					.animate(
+					{
+						width: "-=20%",
+						height: "auto"
+					},
+					500
+				)
 			}
 		}
-	)
-	
+	)	
 	$(".yellow")
 		.on(
 		{
@@ -132,13 +168,27 @@ $(function () {
 				audio.play();
 			},
 			mouseenter: function(){
-				
+				$(this)
+					.animate(
+					{
+						width: "+=20%",
+						height: "auto"
+					},
+					500
+				)
 			},
 			mousedown: function(){
 				
 			},
 			mouseleave: function(){
-				
+				$(this)
+					.animate(
+					{
+						width: "-=20%",
+						height: "auto"
+					},
+					500
+				)
 			}
 		}
 	)
@@ -152,13 +202,27 @@ $(function () {
 				audio.play();
 			},
 			mouseenter: function(){
-				
+				$(this)
+					.animate(
+					{
+						width: "+=20%",
+						height: "auto"
+					},
+					500
+				)
 			},
 			mousedown: function(){
 				
 			},
 			mouseleave: function(){
-				
+				$(this)
+					.animate(
+					{
+						width: "-=20%",
+						height: "auto"
+					},
+					500
+				)
 			}
 		}
 	)
@@ -172,14 +236,28 @@ $(function () {
 				audio.play();
 			},
 			mouseenter: function(){
-				
+				$(this)
+					.animate(
+					{
+						width: "+=20%",
+						height: "auto"
+					},
+					500
+				)
 			},
 			mousedown: function(){
 				
 			},
 			mouseleave: function(){
-				
-			}			
+				$(this)
+					.animate(
+					{
+						width: "-=20%",
+						height: "auto"
+					},
+					500
+				)
+			}
 		}
 	)
 	
@@ -192,13 +270,27 @@ $(function () {
 				audio.play();
 			},
 			mouseenter: function(){
-				
+				$(this)
+					.animate(
+					{
+						width: "+=20%",
+						height: "auto"
+					},
+					500
+				)
 			},
 			mousedown: function(){
 				
 			},
 			mouseleave: function(){
-				
+				$(this)
+					.animate(
+					{
+						width: "-=20%",
+						height: "auto"
+					},
+					500
+				)
 			}
 		}
 	)
@@ -212,13 +304,27 @@ $(function () {
 				audio.play();
 			},
 			mouseenter: function(){
-				
+				$(this)
+					.animate(
+					{
+						width: "+=20%",
+						height: "auto"
+					},
+					500
+				)
 			},
 			mousedown: function(){
 				
 			},
 			mouseleave: function(){
-				
+				$(this)
+					.animate(
+					{
+						width: "-=20%",
+						height: "auto"
+					},
+					500
+				)
 			}
 		}
 	)
@@ -232,13 +338,27 @@ $(function () {
 				audio.play();
 			},
 			mouseenter: function(){
-				
+				$(this)
+					.animate(
+					{
+						width: "+=20%",
+						height: "auto"
+					},
+					500
+				)
 			},
 			mousedown: function(){
 				
 			},
 			mouseleave: function(){
-				
+				$(this)
+					.animate(
+					{
+						width: "-=20%",
+						height: "auto"
+					},
+					500
+				)
 			}
 		}
 	)
